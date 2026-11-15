@@ -9,9 +9,9 @@ public class OrbitController : MonoBehaviour
     public Transform spacecraft;
     public LineRenderer orbitLine;
 
-    //public Slider periapsisSlider;
-    //public Slider apoapsisSlider;
-    //public Slider inclinationSlider;
+    /*public Slider periapsisSlider;
+    public Slider apoapsisSlider;
+    public Slider inclinationSlider;*/
 
 
     //[Header("Planet Properties")]
@@ -50,6 +50,7 @@ public class OrbitController : MonoBehaviour
 
     private float meanMotion;
 
+
     void Start()
     {
         //periapsisAltitudeKm = celestialBody.minPeriapsisAltitudeKm;
@@ -82,9 +83,6 @@ public class OrbitController : MonoBehaviour
     }
     public void RebuildOrbit()
     {
-        //if (centralBody == null ||
-        //    spacecraft == null ||
-        //    orbitLine == null)
         if (celestialBody == null ||
            spacecraft == null ||
            orbitLine == null)
@@ -94,10 +92,6 @@ public class OrbitController : MonoBehaviour
             return;
         }
 
-        //if (kmPerUnityUnit <= 0f ||
-        //   gravitationalParameter <= 0f ||
-        //    planetRadiusKm <= 0f ||
-        //    orbitSegments < 12)
         if (kmPerUnityUnit <= 0f ||
             celestialBody.gravitationalParameter <= 0f ||
             celestialBody.planetRadiusKm <= 0f ||
