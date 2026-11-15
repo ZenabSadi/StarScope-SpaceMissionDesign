@@ -39,6 +39,11 @@ public class MainMenuController : MonoBehaviour
             previousScene = "SpacecraftScene";
         else if (currentScene == "LaunchScene")
             previousScene = "TrajectorySelectionScene";
+        else if (currentScene == "LunarRoverScene")
+        {
+            previousScene = "MissionDirectorScene";
+            LunarLaunchSequence.RequestedSpacecraft = null;
+        }
         else
         {
             Debug.LogError($"No previous mission stage is defined for scene '{currentScene}'.");
@@ -54,7 +59,7 @@ public class MainMenuController : MonoBehaviour
         string nextScene;
 
         if (currentScene == "MissionDirectorScene")
-            nextScene = "InstrumentsScene";
+            nextScene = "LunarRoverScene";
         else if (currentScene == "InstrumentsScene")
             nextScene = "RobotsScene";
         else if (currentScene == "RobotsScene")

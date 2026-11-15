@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LaunchScene.unity
     guid: 7afa6ebdef98441468205890526fc6f4
+  - enabled: 1
+    path: Assets/Scenes/LunarRoverScene.unity
+    guid: 98d97d92fb0e8054ead676356f746e2a
+  - enabled: 1
+    path: Assets/Scenes/LunarTransferScene.unity
+    guid: 2b971f036d987d7479db3801a840f92b
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
